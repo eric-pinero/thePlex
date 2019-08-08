@@ -1,2 +1,0 @@
-class AiCombatant < ApplicationRecord
-end
