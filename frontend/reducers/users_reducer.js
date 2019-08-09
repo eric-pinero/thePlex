@@ -5,7 +5,6 @@ import {
     RECEIVE_USER,
 } from "../actions/user_actions";
 import { merge } from "lodash";
-import { RECEIVE_PROJECT } from "../actions/project_actions";
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state);
@@ -19,11 +18,6 @@ const usersReducer = (state = {}, action) => {
 
             return newState;
 
-        case RECEIVE_PROJECT:
-            newState = merge({}, state, { [action.creator.id]: action.creator })
-
-            return newState;
-         
         default:
             return state;
     }
