@@ -133,7 +133,7 @@ class SessionForm extends React.Component{
 
         const loginFooter = this.props.formType == "login" ?
             <div className="login-footer-frame">
-                <p className="login-footer">New to Bootbeginner?  <Link className="session-link" to={destination}>{linkName}</Link></p>
+                <p className="login-footer">New to the Plex?  <Link className="session-link" to={destination}>{linkName}</Link></p>
             </div>
             :
             null
